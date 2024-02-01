@@ -1,10 +1,10 @@
 %Image loading and displaying.
-a = imread('cloud.png');
+a = imread('/MATLAB Drive/img.PNG');
 imshow(a)
 title("Original Image")
 
 
-%TASK 2: Downsampling the original image
+%Downsampling the original image
 
 %downsampling factors
 df = [2, 4, 8]

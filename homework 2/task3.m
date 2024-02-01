@@ -1,5 +1,6 @@
 %Image loading and displaying.
-a = imread('cloud.png');
+a = imread('/MATLAB Drive/img.PNG');
+figure;
 imshow(a)
 title("Original Image")
 
@@ -12,6 +13,7 @@ for i = 1:length(levels)
     quantized = imquantize(a, linspace(0, 255, l))
 
     quantized = uint8(quantized * (255/l))
-    figure;    imshow(quantized)
-    title(["Quantized to " num2str(levels)])
+    figure;   
+    imshow(quantized)
+    title(["Quantized to " num2str(levels(i))])
 end
